@@ -13,6 +13,34 @@ lazyImages.forEach(addLoadedClass); // Loop through all the images and call the 
 
 /* === */
 
+/* Before after slider -> */
+const beforeAfterSlider = document.getElementById('before-after-slider');
+if (beforeAfterSlider) {
+   new Swiper(beforeAfterSlider, {
+      autoHeight: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      watchOverflow: true,
+      spaceBetween: 20,
+      loop: false,
+      speed: 800,
+      effect: 'fade',
+      fadeEffect: {
+         crossFade: true
+      },
+      allowTouchMove: false,
+      simulateTouch: false,
+      touchRation: 0,
+      touchAngle: 0,
+      grabCursor: false,
+      pagination: {
+         el: '#before-after-slider-pagination',
+         clickable: true,
+      }
+   });
+}
+/* <- Before after slider */
+
 /* Latest news slider -> */
 const gallerySlider = document.getElementById('gallery-slider');
 if (gallerySlider) {

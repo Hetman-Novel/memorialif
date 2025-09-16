@@ -6,11 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap&_v=20250916124354" rel="stylesheet">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250916124354">
-   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250916124354">
-   <link rel="stylesheet" href="files/simplebar/simplebar.css?_v=20250916124354">
-   <link rel="stylesheet" href="css/style.min.css?_v=20250916124354">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap&_v=20250917015244" rel="stylesheet">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250917015244">
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250917015244">
+   <link rel="stylesheet" href="files/simplebar/simplebar.css?_v=20250917015244">
+   <link rel="stylesheet" href="css/style.min.css?_v=20250917015244">
    <title>Головна - </title>
 </head>
 
@@ -19,7 +19,48 @@
 		
 		<main class="main">
 
-
+			<section class="first-screen">
+				<div class="n_container">
+					<div class="first-screen__items">
+						<div class="first-screen__content">
+							<p class="n_sec-subtitle">Ми дбаємо, ви зберігаєте пам’ять</p>
+							<h1 class="n_sec-title">Догляд за могилами в Івано‑Франківську</h1>
+							<p class="first-screen__desc">Приберемо, оновимо, поставимо квіти та лампадки.<br> Оплата карткою та з‑за кордону.<br> Маршрут 48 год.</p>
+							<a href="#" class="first-screen__button">Замовити догляд</a>
+						</div>
+						<div class="first-screen__wrap-ba">
+							<div id="before-after-slider" class="swiper-conteiner">
+								<div class="swiper-wrapper">
+									
+									<div class="swiper-slide">
+										<div class="first-screen__before-after js-before-after">
+											<img src="images/page-head.jpg" alt="Before">
+											<img src="images/page-head-all-posts.jpg" alt="After">
+										</div>
+									</div>
+									
+									<div class="swiper-slide">
+										<div class="first-screen__before-after js-before-after">
+											<img src="images/our-services-image-6.jpg" alt="Before">
+											<img src="images/our-services-image-7.jpg" alt="After">
+										</div>
+									</div>
+									
+									<div class="swiper-slide">
+										<div class="first-screen__before-after js-before-after">
+											<img src="images/our-services-image-4.jpg" alt="Before">
+											<img src="images/our-services-image-5.jpg" alt="After">
+										</div>
+									</div>
+									
+								</div>
+								<div id="before-after-slider-pagination" class="swiper-pagination before-after-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="first-screen__bg" src="images/first-screen-bg.png" alt="">
+			</section>
 
 			<section class="our-services">
 				<div class="n_container">
@@ -142,7 +183,44 @@
 				<div class="n_container">
 					<p class="n_sec-subtitle">Ми дбаємо, ви зберігаєте пам’ять</p>
 					<h2 class="n_sec-title">Як це працює</h2>
-
+					<div class="how-it-works__items">
+						<div class="how-it-works__item">
+							<div class="js-how-it-works-block">
+								<p>Залишаєте дані місця поховання та обираєте пакет.</p>
+							</div>
+							<div class="block-icon">
+								<picture>
+									<source media="(min-width:576px)" srcset="images/svg/how-it-works-icon-1.svg">
+									<source media="(max-width:575px)" srcset="images/svg/how-it-works-icon-1-mobile.svg">
+									<img src="images/svg/how-it-works-icon-1.svg" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="how-it-works__item">
+							<div class="js-how-it-works-block">
+								<p>Погоджуємо дату/час і виконуємо роботи.</p>
+							</div>
+							<div class="block-icon">
+								<picture>
+									<source media="(min-width:576px)" srcset="images/svg/how-it-works-icon-2.svg">
+									<source media="(max-width:575px)" srcset="images/svg/how-it-works-icon-2-mobile.svg">
+									<img src="images/svg/how-it-works-icon-2.svg" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="how-it-works__item">
+							<div class="js-how-it-works-block">
+								<p>Надсилаємо фото «до/після» з геоміткою та короткий звіт.</p>
+							</div>
+							<div class="block-icon">
+								<picture>
+									<source media="(min-width:576px)" srcset="images/svg/how-it-works-icon-3.svg">
+									<source media="(max-width:575px)" srcset="images/svg/how-it-works-icon-3-mobile.svg">
+									<img src="images/svg/how-it-works-icon-3.svg" alt="">
+								</picture>
+							</div>
+						</div>
+					</div>
 				</div>
 				<img src="images/how-it-works-image-bg.jpg" alt="" class="how-it-works__bg">
 			</section>
@@ -220,7 +298,7 @@
 							<tbody>
 								<tr>
 									<th scope="row">
-										<h3>Quarterly (4x/рік)</h3>
+										<p>Quarterly (4x/рік)</p>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper eu elit non dignissim.</p>
 									</th>
 									<td>
@@ -238,7 +316,7 @@
 								</tr>
 								<tr>
 									<th scope="row">
-										<h3>Seasonal (6x/рік)</h3>
+										<p>Seasonal (6x/рік)</p>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper eu elit non dignissim.</p>
 									</th>
 									<td>
@@ -256,7 +334,7 @@
 								</tr>
 								<tr>
 									<th scope="row">
-										<h3>Monthly (12x/рік)</h3>
+										<p>Monthly (12x/рік)</p>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper eu elit non dignissim.</p>
 									</th>
 									<td>
@@ -618,11 +696,17 @@
    </div>
 </footer>
 	</div>
-	<script src="js/script.min.js?_v=20250916124354"></script>
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250916124354"></script>
-	<script src="files/swiper/js/init.js?_v=20250916124354"></script>
-	<script src="files/js/jquery-3.6.1.min.js?_v=20250916124354"></script>
-	<script src="files/fancybox/fancybox.umd.js?_v=20250916124354"></script>
-	<script src="files/simplebar/simplebar.min.js?_v=20250916124354"></script>
+	<script src="js/script.min.js?_v=20250917015244"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250917015244"></script>
+	<script src="files/swiper/js/init.js?_v=20250917015244"></script>
+	<script src="files/js/jquery-3.6.1.min.js?_v=20250917015244"></script>
+	<script src="files/fancybox/fancybox.umd.js?_v=20250917015244"></script>
+	<script src="files/simplebar/simplebar.min.js?_v=20250917015244"></script>
+
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250917015244"></script>-->
+	<script src="files/js/beforeafter.jquery.min.js?_v=20250917015244"></script>
+	<script>
+		$('.js-before-after').beforeAfter();
+	</script>
 </body>
 </html>
