@@ -1925,6 +1925,145 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 122px;
 }
 
+.how-it-works {
+  background-color: #2E5E4E;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  position: relative;
+}
+
+.how-it-works::before {
+  background-color: rgba(46, 94, 78, 0.7);
+  bottom: 0;
+  content: "";
+  left: 0;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.how-it-works .n_container {
+  position: relative;
+  z-index: 1;
+}
+
+.how-it-works .n_sec-subtitle,
+.how-it-works .n_sec-title {
+  color: #fff;
+  text-align: left;
+}
+
+.how-it-works__bg {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.tariffs {
+  padding-bottom: 32px;
+  padding-top: 100px;
+}
+
+.tariffs__items {
+  margin-top: 58px;
+}
+
+.tariffs__blockPlan {
+  background-color: #fff;
+  border: 4px solid #E7E0D4;
+  border-radius: 20px;
+  margin-top: auto;
+  padding: 37px 24px 24px;
+}
+
+.tariffs__blockPlan.plus {
+  background-color: #2E5E4E;
+  border-color: #B08D57;
+}
+
+.tariffs__blockPlan.plus .tariffs__name,
+.tariffs__blockPlan.plus .tariffs__list li {
+  color: #fff;
+}
+
+.tariffs__blockPlan.plus .tariffs__list {
+  margin-top: 23px;
+}
+
+.tariffs__blockPlan.plus .tariffs__button {
+  background-color: #F3EDE2;
+  border-color: #B08D57;
+  color: #B08D57;
+  margin-top: 34px;
+}
+
+.tariffs__name {
+  color: #2E5E4E;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 130%;
+  margin: 0;
+  text-align: center;
+}
+
+.tariffs__price {
+  color: #B08D57;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 130%;
+  margin: 15px 0 0 !important;
+  text-align: center;
+}
+
+.tariffs__list {
+  margin: 19px auto 0;
+  max-width: 220px;
+}
+
+.tariffs__list li {
+  color: #0D0F20;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  padding-bottom: 4px;
+  padding-top: 17px;
+  text-align: center;
+}
+
+.tariffs__list li:not(:last-child) {
+  border-bottom: 2px solid #F3EDE2;
+}
+
+.tariffs__button {
+  align-items: center;
+  background-color: #2E5E4E;
+  border: 1px solid #2E5E4E;
+  border-radius: 10px;
+  color: #fff;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 22px auto 0;
+  padding: 5px 12px;
+  width: 103px;
+}
+
 .season-tickets {
   background-color: #2E5E4E;
   overflow: hidden;
@@ -2845,6 +2984,22 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (min-width: 961px) {
+  .tariffs__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .tariffs__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 48px;
+    width: calc(33.3333% - 30px);
+  }
+}
+
 @media screen and (min-width: 1025px) {
   body::-webkit-scrollbar {
     width: 8px;
@@ -2874,6 +3029,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .footer__nav ul li:not(:first-child) {
     margin-left: 42px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .tariffs__items {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+
+  .tariffs__item {
+    margin: 0 24px 48px;
+    width: calc(33.3333% - 48px);
   }
 }
 
@@ -3165,6 +3332,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .wrap-language {
     margin-right: 20px;
+  }
+
+  .tariffs__name {
+    font-size: 42px;
   }
 
   .season-tickets__wrap-table {
@@ -3473,6 +3644,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: calc(100% - 60px);
   }
 
+  .tariffs__name {
+    font-size: 34px;
+  }
+
   .season-tickets__wrap-table {
     margin-left: -30px;
     margin-right: -30px;
@@ -3520,6 +3695,17 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .tariffs__item {
+    margin: 0 auto 30px;
+    max-width: 480px;
+  }
+
+  .tariffs__name {
+    font-size: 50px;
+  }
+}
+
 @media screen and (max-width: 860px) {
   .season-tickets__image {
     display: none;
@@ -3527,6 +3713,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .section-faq__image {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800.98px) {
+  .tariffs__name {
+    font-size: 44px;
   }
 }
 
@@ -3708,6 +3900,43 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .block-service__button {
     margin-top: 22px;
+  }
+
+  .tariffs {
+    padding-bottom: 16px;
+    padding-top: 42px;
+  }
+
+  .tariffs__items {
+    margin-top: 32px;
+  }
+
+  .tariffs__item {
+    margin-bottom: 24px;
+  }
+
+  .tariffs__blockPlan {
+    padding: 36px 20px 36px;
+  }
+
+  .tariffs__blockPlan.plus .tariffs__list {
+    margin-top: 7px;
+  }
+
+  .tariffs__blockPlan.plus .tariffs__button {
+    margin-top: 18px;
+  }
+
+  .tariffs__name {
+    font-size: 37px;
+  }
+
+  .tariffs__price {
+    margin: 19px 0 0 !important;
+  }
+
+  .tariffs__button {
+    margin: 18px auto 0;
   }
 
   .season-tickets::after {
@@ -4028,6 +4257,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .block-service__button:hover {
+    background-color: #274E41;
+  }
+
+  .tariffs__blockPlan.plus .tariffs__button {
+    transition: 0.3s ease 0s;
+  }
+
+  .tariffs__blockPlan.plus .tariffs__button:hover {
+    background-color: #D0A055;
+    border-color: #D0A055;
+    color: #fff;
+  }
+
+  .tariffs__button {
+    transition: 0.3s ease 0s;
+  }
+
+  .tariffs__button:hover {
     background-color: #274E41;
   }
 }
