@@ -6,17 +6,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap&_v=20250917141415" rel="stylesheet">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250917141415">
-   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250917141415">
-   <link rel="stylesheet" href="files/simplebar/simplebar.css?_v=20250917141415">
-   <link rel="stylesheet" href="css/style.min.css?_v=20250917141415">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap&_v=20250917202746" rel="stylesheet">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250917202746">
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250917202746">
+   <link rel="stylesheet" href="files/simplebar/simplebar.css?_v=20250917202746">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20250917202746">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20250917202746">
+   <link rel="stylesheet" href="css/style.min.css?_v=20250917202746">
    <title>Головна - </title>
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header lock-padding">
+		<header class="header"><!-- lock-padding -->
 	<div class="header__top">
 		<div class="n_container">
 			<address>вул. Набережна, біля Ритуального дому свв. ап. Петра і Павла</address>
@@ -27,7 +29,7 @@
 			<div class="header__blockLogo">
 				<a href="/"><img src="images/svg/logo.svg" alt=""></a>
 			</div>
-			<a href="#" class="header__button mobile-and-tablet">Замовити дзвінок</a>
+			<a href="#feedback-popup" class="header__button mobile-and-tablet popup-link">Замовити дзвінок</a>
 			<div class="header__menu menu">
 				<div class="menu__body">
 					<nav class="menu-topmenu-container">
@@ -91,7 +93,7 @@
 			</div>
 			<div data-da="menu-topmenu-container, last, 1100" class="header__right hidden">
 				<a href="tel:+380 XX XXX XX XX" class="header__phone">+380 XX XXX XX XX</a>
-				<a href="#" class="header__button">Замовити дзвінок</a>
+				<a href="#feedback-popup" class="header__button popup-link">Замовити дзвінок</a>
 				<p>Ми дбаємо, ви зберігаєте пам’ять</p>
 			</div>
 			<button type="button" class="menu__icon">
@@ -162,7 +164,7 @@
 								<div class="block-service__blockContent">
 									<h3>Прибирання могил</h3>
 									<p>Підтримка поховання<br> в чистоті</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -174,7 +176,7 @@
 								<div class="block-service__blockContent">
 									<h3>Догляд за могилами</h3>
 									<p>Прибирання та вивіз<br> сміття</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -186,7 +188,7 @@
 								<div class="block-service__blockContent">
 									<h3>Прибирання території</h3>
 									<p>Підтримка території<br> поховання в порядку</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -198,7 +200,7 @@
 								<div class="block-service__blockContent">
 									<h3>Вологе прибирання</h3>
 									<p>Всіх елементів<br> інтер’єру</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -210,7 +212,7 @@
 								<div class="block-service__blockContent">
 									<h3>Полив та заміна квітів</h3>
 									<p>Полив зелених насаджень на<br> місці поховання</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -222,7 +224,7 @@
 								<div class="block-service__blockContent">
 									<h3>Очищення від бур’яну</h3>
 									<p>Обробка від бур’янів всієї території поховання</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -234,7 +236,7 @@
 								<div class="block-service__blockContent">
 									<h3>Фарбування огорож</h3>
 									<p>(Матеріал не входить<br> у вартість)</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -246,7 +248,7 @@
 								<div class="block-service__blockContent">
 									<h3>Організація похорону</h3>
 									<p>Організація від А до Я з супроводом 24/7</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -258,7 +260,7 @@
 								<div class="block-service__blockContent">
 									<h3>Сервіс пам’ятників</h3>
 									<p>Полірування, відновлення,<br> ремонт та реставрація</p>
-									<a href="" class="block-service__button">Замовити</a>
+									<a href="#" class="block-service__button">Замовити</a>
 								</div>
 							</div>
 						</div>
@@ -328,7 +330,7 @@
 									<li>1 лампадка</li>
 									<li>3 фото «до/після»</li>
 								</ul>
-								<button type="button" class="tariffs__button">Обрати</button>
+								<a href="#service-popup" data-package="Тариф - Basic: 1200 грн" class="tariffs__button popup-link">Обрати</a>
 							</div>
 						</div>
 						<div class="tariffs__item">
@@ -342,7 +344,7 @@
 									<li>5 фото</li>
 									<li>Звіт про виконання</li>
 								</ul>
-								<button type="button" class="tariffs__button">Обрати</button>
+								<a href="#service-popup" data-package="Тариф - Plus: 1700 грн" class="tariffs__button popup-link">Обрати</a>
 							</div>
 						</div>
 						<div class="tariffs__item">
@@ -356,7 +358,7 @@
 									<li>9 фото</li>
 									<li>Розширений звіт</li>
 								</ul>
-								<button type="button" class="tariffs__button">Обрати</button>
+								<a href="#service-popup" data-package="Тариф - Premium: 2300 грн" class="tariffs__button popup-link">Обрати</a>
 							</div>
 						</div>
 					</div>
@@ -390,15 +392,15 @@
 									</th>
 									<td>
 										<p>4 320 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Quarterly (4x/рік) - Basic: 4 320 ₴" class="popup-link">Замовити</a>
 									</td>
 									<td>
 										<p>6 120 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Quarterly (4x/рік) - Plus: 6 120 ₴" class="popup-link">Замовити</a>
 									</td>
 									<td>
 										<p>8 280 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Quarterly (4x/рік) - Premium: 8 280 ₴" class="popup-link">Замовити</a>
 									</td>
 								</tr>
 								<tr>
@@ -408,15 +410,15 @@
 									</th>
 									<td>
 										<p>5 760 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Seasonal (6x/рік) - Basic: 5 760 ₴" class="popup-link">Замовити</a>
 									</td>
 									<td>
 										<p>8 160 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Seasonal (6x/рік) - Plus: 8 160 ₴" class="popup-link">Замовити</a>
 									</td>
 									<td>
 										<p>11 040 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Seasonal (6x/рік) - Premium: 11 040 ₴" class="popup-link">Замовити</a>
 									</td>
 								</tr>
 								<tr>
@@ -426,15 +428,15 @@
 									</th>
 									<td>
 										<p>10 080 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Monthly (12x/рік) - Basic: 10 080 ₴" class="popup-link">Замовити</a>
 									</td>
 									<td>
 										<p>14 280 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Monthly (12x/рік) - Plus: 14 280 ₴" class="popup-link">Замовити</a>
 									</td>
 									<td>
 										<p>19 320 ₴</p>
-										<a href="#">Замовити</a>
+										<a href="#service-popup" data-package="Абонементи: Monthly (12x/рік) - Premium: 19 320 ₴" class="popup-link">Замовити</a>
 									</td>
 								</tr>
 							</tbody>
@@ -449,7 +451,37 @@
 					<p class="n_sec-subtitle">Ми дбаємо, ви зберігаєте пам’ять</p>
 					<h2 class="n_sec-title">Замовлення</h2>
 					<div class="section-with-form__block">
-						
+						<form>
+							<div class="section-with-form__fields">
+								<select id="order-select">
+									<option value="" selected disabled>Кладовище</option>
+									<option value="Кладовище 1">Кладовище 1</option>
+									<option value="Кладовище 2">Кладовище 2</option>
+									<option value="Кладовище 3">Кладовище 3</option>
+									<option value="Кладовище 4">Кладовище 4</option>
+									<option value="Кладовище 5">Кладовище 5</option>
+									<option value="Кладовище 6">Кладовище 6</option>
+									<option value="Кладовище 7">Кладовище 7</option>
+									<option value="Кладовище 8">Кладовище 8</option>
+									<option value="Кладовище 9">Кладовище 9</option>
+									<option value="Кладовище 10">Кладовище 10</option>
+								</select>
+								<input type="text" placeholder="Сектор / ряд / місце">
+								<input type="date" placeholder="Оберіть дату">
+							</div>
+							<div class="section-with-form__fields">
+								<input type="text" placeholder="Ваше ім’я">
+								<input type="text" placeholder="E-mail">
+								<input type="text" placeholder="Телефон" class="phone">
+							</div>
+							<textarea placeholder="Коментар до замовлення"></textarea>
+							<p class="section-with-form__text-price">До оплати: <span id="form-price" class="price">1 700 грн</span></p>
+							<div class="section-with-form__buttons">
+								<input type="submit" value="Надіслати запит" class="section-with-form__button">
+								<button type="button" class="section-with-form__button pay-online">Оплатити онлайн</button>
+							</div>
+							<p class="section-with-form__text">або PayPal / Wise: <a href="#">PayPal</a> <a href="#">Wise</a></p>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -783,17 +815,77 @@
    </div>
 </footer>
 	</div>
-	<script src="js/script.min.js?_v=20250917141415"></script>
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250917141415"></script>
-	<script src="files/swiper/js/init.js?_v=20250917141415"></script>
-	<script src="files/js/jquery-3.6.1.min.js?_v=20250917141415"></script>
-	<script src="files/fancybox/fancybox.umd.js?_v=20250917141415"></script>
-	<script src="files/simplebar/simplebar.min.js?_v=20250917141415"></script>
+	<script src="js/script.min.js?_v=20250917202746"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250917202746"></script>
+	<script src="files/swiper/js/init.js?_v=20250917202746"></script>
+	<script src="files/js/jquery-3.6.1.min.js?_v=20250917202746"></script>
+	<script src="files/fancybox/fancybox.umd.js?_v=20250917202746"></script>
+	<script src="files/simplebar/simplebar.min.js?_v=20250917202746"></script>
 
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250917141415"></script>-->
-	<script src="files/js/beforeafter.jquery.min.js?_v=20250917141415"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250917202746"></script>-->
+	<script src="files/js/beforeafter.jquery.min.js?_v=20250917202746"></script>
 	<script>
 		$('.js-before-after').beforeAfter();
 	</script>
+
+	<script src="files/select2/js/select2.min.js?_v=20250917202746"></script>
+	<script src="files/select2/js/init.js?_v=20250917202746"></script>
+
+	<script src="files/js/form.js?_v=20250917202746"></script>
+
+	<div id="service-popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<!--<a href="" class="popup__close close-popup">X</a>-->
+		
+				<h3 id="popup-title" class="popup__title">Замовити дзвінок</h3>
+
+				<form class="popup__form">
+					<div class="popup__form-wrap-fields">
+						<input class="popup__form-field" placeholder="Ваше ім’я">
+						<input class="popup__form-field phone" placeholder="Телефон">
+					</div>
+					<select id="our-services-select">
+						<option value="" selected disabled>Оберіть кладовище</option>
+						<option value="кладовище 1">кладовище 1</option>
+						<option value="кладовище 2">кладовище 2</option>
+						<option value="кладовище 3">кладовище 3</option>
+						<option value="кладовище 4">кладовище 4</option>
+						<option value="кладовище 5">кладовище 5</option>
+						<option value="кладовище 6">кладовище 6</option>
+						<option value="кладовище 7">кладовище 7</option>
+						<option value="кладовище 8">кладовище 8</option>
+						<option value="кладовище 9">кладовище 9</option>
+						<option value="кладовище 10">кладовище 10</option>
+					</select>
+					<textarea class="popup__form-field" placeholder="Деталі замовлення"></textarea>
+					<button type="submit" class="popup__form-submit">Надіслати запит</button>
+					<input type="hidden" name="package" id="package-input" value="">
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="feedback-popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<!--<a href="" class="popup__close close-popup">X</a>-->
+		
+				<h3 class="popup__title">Замовити зворотній зв’язок</h3>
+
+				<form class="popup__form">
+					<div class="popup__form-wrap-fields">
+						<input class="popup__form-field" placeholder="Ваше ім’я">
+						<input class="popup__form-field phone" placeholder="Телефон">
+					</div>
+					<textarea class="popup__form-field" placeholder="Деталі замовлення"></textarea>
+					<button type="submit" class="popup__form-submit">Надіслати запит</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
