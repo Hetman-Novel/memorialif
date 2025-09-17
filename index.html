@@ -6,17 +6,100 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap&_v=20250917015244" rel="stylesheet">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250917015244">
-   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250917015244">
-   <link rel="stylesheet" href="files/simplebar/simplebar.css?_v=20250917015244">
-   <link rel="stylesheet" href="css/style.min.css?_v=20250917015244">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap&_v=20250917141415" rel="stylesheet">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20250917141415">
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20250917141415">
+   <link rel="stylesheet" href="files/simplebar/simplebar.css?_v=20250917141415">
+   <link rel="stylesheet" href="css/style.min.css?_v=20250917141415">
    <title>Головна - </title>
 </head>
 
 <body>
 	<div class="wrapper">
-		
+		<header class="header lock-padding">
+	<div class="header__top">
+		<div class="n_container">
+			<address>вул. Набережна, біля Ритуального дому свв. ап. Петра і Павла</address>
+		</div>
+	</div>
+	<div class="header__wrapper">
+		<div id="header-container" class="n_container header-container">
+			<div class="header__blockLogo">
+				<a href="/"><img src="images/svg/logo.svg" alt=""></a>
+			</div>
+			<a href="#" class="header__button mobile-and-tablet">Замовити дзвінок</a>
+			<div class="header__menu menu">
+				<div class="menu__body">
+					<nav class="menu-topmenu-container">
+						<ul class="menu__list">
+							<li class="menu-item menu-item-has-children"><!-- current-menu-item -->
+								<a href="#">Про нас</a>
+								<!--<div class="menu-arrow"></div>
+								<ul class="sub-menu">
+									<li class="menu-item">
+										<a href="#">Пункт 1</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Пункт 2</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Пункт 3</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Пункт 4</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Lorem ipsum dol sit amet consectetur adipisicing.</a>
+									</li>
+								</ul>-->
+							</li>
+							<li class="menu-item">
+								<a href="#">Послуги</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Тарифи</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Як ми працюємо</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Контакти</a>
+							</li>
+					  <!--<li class="menu-item menu-item-has-children">
+								<a href="#">Демо</a>
+								<ul class="sub-menu">
+									<li class="menu-item">
+										<a href="#">Пункт 1</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Пункт 2</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Пункт 3</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Пункт 4</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Lorem ipsum dol sit amet consectetur adipisicing.</a>
+									</li>
+								</ul>
+							</li>-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div data-da="menu-topmenu-container, last, 1100" class="header__right hidden">
+				<a href="tel:+380 XX XXX XX XX" class="header__phone">+380 XX XXX XX XX</a>
+				<a href="#" class="header__button">Замовити дзвінок</a>
+				<p>Ми дбаємо, ви зберігаєте пам’ять</p>
+			</div>
+			<button type="button" class="menu__icon">
+				<span></span>
+			</button>
+		</div>
+	</div>
+</header>
 		<main class="main">
 
 			<section class="first-screen">
@@ -59,7 +142,11 @@
 						</div>
 					</div>
 				</div>
-				<img class="first-screen__bg" src="images/first-screen-bg.png" alt="">
+				<picture>
+					<source media="(min-width:576px)" srcset="images/first-screen-bg.png">
+					<source media="(max-width:575px)" srcset="images/first-screen-bg-mobile.png">
+					<img class="first-screen__bg" src="images/first-screen-bg.png" alt="">
+				</picture>
 			</section>
 
 			<section class="our-services">
@@ -696,15 +783,15 @@
    </div>
 </footer>
 	</div>
-	<script src="js/script.min.js?_v=20250917015244"></script>
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250917015244"></script>
-	<script src="files/swiper/js/init.js?_v=20250917015244"></script>
-	<script src="files/js/jquery-3.6.1.min.js?_v=20250917015244"></script>
-	<script src="files/fancybox/fancybox.umd.js?_v=20250917015244"></script>
-	<script src="files/simplebar/simplebar.min.js?_v=20250917015244"></script>
+	<script src="js/script.min.js?_v=20250917141415"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20250917141415"></script>
+	<script src="files/swiper/js/init.js?_v=20250917141415"></script>
+	<script src="files/js/jquery-3.6.1.min.js?_v=20250917141415"></script>
+	<script src="files/fancybox/fancybox.umd.js?_v=20250917141415"></script>
+	<script src="files/simplebar/simplebar.min.js?_v=20250917141415"></script>
 
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250917015244"></script>-->
-	<script src="files/js/beforeafter.jquery.min.js?_v=20250917015244"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250917141415"></script>-->
+	<script src="files/js/beforeafter.jquery.min.js?_v=20250917141415"></script>
 	<script>
 		$('.js-before-after').beforeAfter();
 	</script>
