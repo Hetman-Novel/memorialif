@@ -120,3 +120,52 @@ if (latestNewsSlider) {
    });
 }
 /* <- Latest news slider */
+
+/* Post slider -> */
+let swiperInstance = null;
+const breakpoint = 640;
+const slider = document.getElementById('post-slider');
+
+function initOrDestroySlider() {
+   const screenWidth = Math.min(window.innerWidth, window.innerHeight); // учитываем ориентацию
+
+   if (screenWidth <= breakpoint && !swiperInstance && slider) {
+      
+      swiperInstance = new Swiper(slider, {
+         navigation: {
+            prevEl: '#post-button-prev',
+            nextEl: '#post-button-next',
+         },
+         autoHeight: false,
+         slidesPerView: 1,
+         slidesPerGroup: 1,
+         watchOverflow: true,
+         spaceBetween: 2,
+         loop: true,
+         speed: 1000,
+         effect: 'fade',
+         fadeEffect: {
+            crossFade: true
+         },
+         preloadImages: false,
+         lazy: {
+            loadOnTransitionStart: true,
+            loadPrewNext: true,
+         },
+         watchSlidesProgress: true,
+         watchSlidesVisibility: true,
+      });
+   }
+
+   if (screenWidth > breakpoint && swiperInstance) {
+      swiperInstance.destroy(true, true);
+      swiperInstance = null;
+   }
+}
+
+// запустить при загрузке
+window.addEventListener('load', initOrDestroySlider);
+// пересчитывать при изменении размера или ориентации
+window.addEventListener('resize', initOrDestroySlider);
+window.addEventListener('orientationchange', initOrDestroySlider);
+/* <- Post slider */
