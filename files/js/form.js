@@ -76,16 +76,17 @@ document.addEventListener('DOMContentLoaded', function () {
       newRow.innerHTML = `
          <select name="service[]" class="add-select-service">
          <option value="" selected disabled>Обрати послугу</option>
-            <option value="Послуга 1">Послуга 1</option>
-            <option value="Послуга 2">Послуга 2</option>
-            <option value="Послуга 3">Послуга 3</option>
-            <option value="Послуга 4">Послуга 4</option>
-            <option value="Послуга 5">Послуга 5</option>
-            <option value="Послуга 6">Послуга 6</option>
-            <option value="Послуга 7">Послуга 7</option>
-            <option value="Послуга 8">Послуга 8</option>
-            <option value="Послуга 9">Послуга 9</option>
-            <option value="Послуга 10">Послуга 10</option>
+            <option value="" selected disabled>Обрати послугу</option>
+            <option value="Прибирання могил">Прибирання могил</option>
+            <option value="Догляд за могилами">Догляд за могилами</option>
+            <option value="Прибирання території">Прибирання території</option>
+            <option value="Вологе прибирання">Вологе прибирання</option>
+            <option value="Полив та заміна квітів">Полив та заміна квітів</option>
+            <option value="Очищення від бур’яну">Очищення від бур’яну</option>
+            <option value="Фарбування огорож">Фарбування огорож</option>
+            <option value="Організація похорону">Організація похорону</option>
+            <option value="Сервіс пам’ятників">Сервіс пам’ятників</option>
+            <option value="Інше">Інше</option>
          </select>
          <button type="button" class="remove-service js-remove-service"></button>`;
       wrapper.appendChild(newRow);

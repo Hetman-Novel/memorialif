@@ -2589,6 +2589,8 @@ body._touch .header .menu__list > li.menu-item-has-children._active .menu-arrow 
 }
 
 .section-with-form__text-price {
+  align-items: center;
+  display: flex;
   font-size: 24px;
   font-weight: 500;
   line-height: 130%;
@@ -2597,6 +2599,21 @@ body._touch .header .menu__list > li.menu-item-has-children._active .menu-arrow 
 
 .section-with-form__text-price span {
   color: #2E5E4E;
+  margin-left: 6px;
+}
+
+.section-with-form__text-price input {
+  border: none !important;
+  border-radius: 0 !important;
+  background: none !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: auto !important;
 }
 
 .section-with-form__text a {
