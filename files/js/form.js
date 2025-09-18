@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
    const phones = document.querySelectorAll('input.phone');
 
+   // phone
    phones.forEach(input => {
       input.addEventListener('input', () => {
          let raw = input.value;
@@ -61,5 +62,45 @@ document.addEventListener('DOMContentLoaded', function () {
          }
          input.value = result;
       });
+   });
+
+   // add service
+   const wrapper = document.querySelector(".services-wrapper");
+   const addBtn = document.querySelector(".add-service");
+
+   if (!wrapper || !addBtn) return;
+
+   addBtn.addEventListener("click", function () {
+      const newRow = document.createElement("div");
+      newRow.classList.add("service-row");
+      newRow.innerHTML = `
+         <select name="service[]" class="add-select-service">
+         <option value="" selected disabled>Обрати послугу</option>
+            <option value="Послуга 1">Послуга 1</option>
+            <option value="Послуга 2">Послуга 2</option>
+            <option value="Послуга 3">Послуга 3</option>
+            <option value="Послуга 4">Послуга 4</option>
+            <option value="Послуга 5">Послуга 5</option>
+            <option value="Послуга 6">Послуга 6</option>
+            <option value="Послуга 7">Послуга 7</option>
+            <option value="Послуга 8">Послуга 8</option>
+            <option value="Послуга 9">Послуга 9</option>
+            <option value="Послуга 10">Послуга 10</option>
+         </select>
+         <button type="button" class="remove-service js-remove-service"></button>`;
+      wrapper.appendChild(newRow);
+
+      // Initialize the newly added select
+      $(newRow).find(".add-select-service").select2({
+         placeholder: "Обрати послугу",
+         theme: 'custom-select',
+         width: "100%"
+      });
+   });
+
+   wrapper.addEventListener("click", function (e) {
+      if (e.target.classList.contains("js-remove-service")) {
+         e.target.closest(".service-row").remove();
+      }
    });
 });

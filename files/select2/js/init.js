@@ -19,8 +19,15 @@ $(document).ready(function () { // Make sure the DOM is fully loaded before init
    });
    */
 
+   $(".add-select-service").select2({
+      placeholder: "Обрати послугу",
+      theme: 'custom-select',
+      width: "100%"
+   });
+
    $('#order-select').select2({
       placeholder: "Кладовище",
+      theme: 'custom-select',
       theme: 'custom-select'
    });
 
